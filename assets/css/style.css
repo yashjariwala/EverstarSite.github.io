@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #topbar {
   background: #0057fe;
-  height: 40px;
+  height: 28px;
   font-size: 14px;
   transition: all 0.5s;
   color: #fff;
@@ -147,6 +147,9 @@ h1, h2, h3, h4, h5, h6 {
 #topbar .social-links a:hover {
   color: white;
 }
+
+.sty{background-color: #0057fe; width:35%; text-align: center;border-radius: 5px; border: 2px solid #fff;} 
+.sty a {color: #fff;}
 
 /*--------------------------------------------------------------
 # Header
@@ -241,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #0057fe;
+  color: #sty;
 }
 .navbar .dropdown ul {
   display: block;
@@ -403,7 +406,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -496,7 +499,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-height: 500px) {
   #hero {
-    height: 120vh;
+    height: 67vh;
   }
 }
 
@@ -509,7 +512,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f6f9fe;
+  background-color: #fff;
 }
 
 .section-title {
@@ -640,7 +643,7 @@ section {
   color: #111;
 }
 .featured-services .description {
-  font-size: 15px;
+  font-size: 15px; 
   line-height: 28px;
   margin-bottom: 0;
 }
@@ -1411,6 +1414,7 @@ section {
     transform: rotate(360deg);
   }
 }
+ 
 
 /*--------------------------------------------------------------
 # Footer
@@ -1468,8 +1472,9 @@ section {
   background: #0d58ba;
 }
 #footer .footer-top {
-  padding: 60px 0 0px 0;
-  background: #fff;
+padding: 60px 0 0px 0;
+    background: #ffffffa6;
+    border: 1px dashed #c4d5f1;
 }
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
