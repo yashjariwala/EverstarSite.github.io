@@ -17,6 +17,9 @@ body {
 
 
 
+
+
+
 .tablink {
   background-color: #555;
   color: white;
@@ -45,25 +48,6 @@ body {
 #News {background-color: green;}
 #Contact {background-color: blue;}
 #About {background-color: orange;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -578,7 +562,7 @@ section {
 }
 
 .section-bg {
-  background-color: #fff;
+  background-color: #Z;
 }
 
 .section-title {
