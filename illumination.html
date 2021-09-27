@@ -36,8 +36,80 @@
 </head>
 <style>
 	.featured-services{
-		padding: 70px
+		padding: 6.5%
 	}
+
+  table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Part No."; }
+	td:nth-of-type(2):before { content: "Color"; }
+	td:nth-of-type(3):before { content: "Power"; }
+	td:nth-of-type(4):before { content: "Size(mm)"; }
+	td:nth-of-type(5):before { content: "VF"; }
+	td:nth-of-type(6):before { content: "IF"; }
+	td:nth-of-type(7):before { content: "Flux"; }
+	td:nth-of-type(8):before { content: "CCT/Wavelength(nm)"; }
+	td:nth-of-type(9):before { content: "CRI"; }
+	td:nth-of-type(10):before { content: "Certificate"; }
+  td:nth-of-type(11):before { content: "Datasheet"; }
+}
 </style>
 
 <body>
@@ -120,9 +192,110 @@
 <button class="tablink" onclick="openPage('MidPower', this, '#003085')" id="defaultOpen">MID POWER</button>
 <button class="tablink" onclick="openPage('HighPower', this, '#003085')">HIGH POWER</button>
 
-<div id="LowPower" class="tabcontent" style="border-style: groove;">
+<div id="LowPower" class="tabcontent" style="border-style: groove;" >
   <h3>Low Power</h3>
   <p>Home is where the heart is..</p>
+
+
+  <table>
+    <thead>
+      <tr>
+        <th>Part No.</th>
+        <th>Color</th>
+        <th>Power</th>
+        <th>Size(mm)</th>
+        <th>VF</th>
+        <th>IF</th>
+        <th>Flux</th>
+        <th>CCT/Wavelength(nm)</th>
+        <th>CRI</th>
+        <th>Certificate</th>
+        <th>Datasheet</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ES-2835-023V-XX-XXX-XX</td>
+        <td>White</td>
+        <td>0.2W</td>
+        <td>3.5*2.8*0.68</td>
+        <td>3V</td>
+        <td>60mA</td>
+        <td>24-31</td>
+        <td>2700-7000</td>
+        <td>80</td>
+        <td>LM80</td>
+        <td>Download</td>
+      </tr>
+      <tr>
+        <td>ES-2835-023V-L1-PXXXX</td>
+        <td>Pink</td>
+        <td>0.2W</td>
+        <td>3.5*2.8*0.68</td>
+        <td>3V</td>
+        <td>60mA</td>
+        <td>-</td>
+        <td>2050</td>
+        <td>-</td>
+        <td>LM80</td>
+        <td>Download</td>
+      </tr>
+      <tr>
+        <td>ES-2835-022V-L1-RXXX</td>
+        <td>Red</td>
+        <td>0.2W</td>
+        <td>3.5*2.8*0.68</td>
+        <td>2V</td>
+        <td>60mA</td>
+        <td>-</td>
+        <td>615-625</td>
+        <td>-</td>
+        <td>LM80</td>
+        <td>Download</td>
+      </tr>
+      <tr>
+        <td>ES-2835-023V-L1-GXXX</td>
+        <td>Green</td>
+        <td>0.2W</td>
+        <td>3.5*2.8*0.68</td>
+        <td>3V</td>
+        <td>60mA</td>
+        <td>-</td>
+        <td>512-525</td>
+        <td>-</td>
+        <td>LM80</td>
+        <td>Download</td>
+      </tr>
+      <tr>
+        <td>ES-2835-023V-L1-BXXX</td>
+        <td>Blue</td>
+        <td>0.2W</td>
+        <td>3.5*2.8*0.68</td>
+        <td>3V</td>
+        <td>60mA</td>
+        <td>-</td>
+        <td>450-460</td>
+        <td>-</td>
+        <td>LM80</td>
+        <td>Download</td>
+      </tr>
+      <tr>
+        <td>ES-2835-023V-XX-A2200</td>
+        <td>Amber</td>
+        <td>0.2W</td>
+        <td>3.5*2.8*0.68</td>
+        <td>3V</td>
+        <td>60mA</td>
+        <td>18-24</td>
+        <td>2200-2400</td>
+        <td>80</td>
+        <td>LM80</td>
+        <td>Download</td>
+      </tr>
+    
+    </tbody>
+  </table>
+  </div>
 </div>
 				
 <div id="MidPower" class="tabcontent" style="border-style: groove;">
