@@ -14,12 +14,6 @@ body {
 }
 
 
-
-
-
-
-
-
 .tablink {
   background-color: #0056fb;
   color: #fff;
@@ -457,7 +451,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.4);
   position: absolute;
   bottom: 0;
   top: 0;
