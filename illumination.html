@@ -39,77 +39,10 @@
 		padding: 6.5%
 	}
 
-  table { 
-  width: 100%; 
-  border-collapse: collapse; 
-}
-/* Zebra striping */
-tr:nth-of-type(odd) { 
-  background: #eee; 
-}
-th { 
-  background: #333; 
-  color: white; 
-  font-weight: bold; 
-}
-td, th { 
-  padding: 6px; 
-  border: 1px solid #ccc; 
-  text-align: center; 
-}
-
-@media 
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
-
-	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr { 
-		display: block; 
-	}
-	
-	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr { 
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
-	
-	tr { border: 1px solid rgb(158, 157, 157); }
-	
-	td { 
-		/* Behave  like a "row" */
-		border: none;
-		border-bottom: 1px solid #000; 
-		position: relative;
-		padding-left: 60%; 
-	}
-	
-	td:before { 
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		left: 6px;
-		width: 45%; 
-		padding-right: 10px; 
-		white-space: nowrap;
-	}
-	
-	/*
-	Label the data
-	*/
-	td:nth-of-type(1):before { content: "Part No."; }
-	td:nth-of-type(2):before { content: "Color"; }
-	td:nth-of-type(3):before { content: "Power"; }
-	td:nth-of-type(4):before { content: "Size(mm)"; }
-	td:nth-of-type(5):before { content: "VF"; }
-	td:nth-of-type(6):before { content: "IF"; }
-	td:nth-of-type(7):before { content: "Flux"; }
-	td:nth-of-type(8):before { content: "CCT/Wavelength(nm)"; }
-	td:nth-of-type(9):before { content: "CRI"; }
-	td:nth-of-type(10):before { content: "Certificate"; }
-  td:nth-of-type(11):before { content: "Datasheet"; }
-}
+  td, tr{
+    text-align: center;
+      white-space: nowrap;
+  }
 </style>
 
 <body>
@@ -193,11 +126,30 @@ only screen and (max-width: 760px),
 <button class="tablink" onclick="openPage('HighPower', this, '#003085')">HIGH POWER</button>
 
 <div id="LowPower" class="tabcontent" style="border-style: groove;" >
-  <h3>Low Power</h3>
-  <p>Home is where the heart is..</p>
+  <h3 style="text-align: center;">Low Power</h3><br>
 
 
-  <table style="">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="assets/img/lowin.jpg" height="200" width="200">
+      </div>
+      <div class="col-9">
+       <h5>Product Introduction</h5>
+This 2835 LED Light Source is a high performance energy efficient device which can handle high thermal and high driving current. The small package outline and high intensity make it an ideal choice for LED panel light, LED bulb light, LED tube light, backlighting etc. The White Power LED is available in the range of color temperature from 2700K to 7000K as well as in Red, Amber, Pink, Green, Blue colour.
+<br><br>
+<h5>Features</h5>
+- Flat panel light<br>
+- LED tube & LED bulb light<br>   
+- Decorative and landscape lighting<br>
+- Signage and channel letter<br>
+        
+      </div>
+    </div>
+    <br>
+
+  <div class="table-responsive">
+  <table class="table table-striped thead-default table-bordered table-responsive" >
     <thead>
       <tr>
         <th>Part No.</th>
