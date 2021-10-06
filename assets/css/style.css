@@ -14,6 +14,16 @@ body {
 }
 
 
+
+
+.table-bordered>:not(caption)>*>* {
+    border-width: 0 1px;
+	padding: 23px 0 23px 0;
+	width: 3%;
+}
+
+
+
 .tablink {
   background-color: #0056fb;
   color: #fff;
@@ -176,7 +186,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 #topbar .contact-info i a {
   line-height: 0;
-  transition: 0.3s;
   transition: 0.3s;
 }
 #topbar .contact-info i a:hover {
