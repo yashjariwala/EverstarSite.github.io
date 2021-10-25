@@ -13,10 +13,7 @@ body {
   color: #444444;
 }
 
-
-.featured-services{
-		padding: 6.5%
-	}
+.im{width: 276px;}
 
   td, tr{
     text-align: center;
@@ -222,6 +219,14 @@ h1, h2, h3, h4, h5, h6 {
     transition-delay: 0 !important;
   }
 }
+@media screen and (max-width: 1378px) {
+	.im{width:232px;}
+  }
+@media screen and (max-width: 1126px) {
+	.im{width:188px;}
+  }
+
+
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
@@ -427,8 +432,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
+	  
   }
-
+	.im{width: 307px;}
   .navbar ul {
     display: none;
   }
@@ -517,7 +523,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, );
   position: absolute;
   bottom: 0;
   top: 0;
@@ -532,7 +538,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #222222;
+  color: #fff;
   font-family: "Poppins", sans-serif;
 }
 #hero h1 span {
@@ -587,11 +593,7 @@ h1, h2, h3, h4, h5, h6 {
     background-attachment: fixed;
   }
 }
-@media (min-width: 1200px) {
-  .container{
-    max-width: 1127px;
-  }
-}
+ 
 @media (max-width: 768px) {
 	#header .logo img {
     max-height: 32px!important;
@@ -716,7 +718,7 @@ section {
 # Featured Services
 --------------------------------------------------------------*/
 .featured-services .icon-box {
-  padding: 30px;
+  padding: 15px 15px 15px 15px!important;
   position: relative;
   overflow: hidden;
   background: #fff;
