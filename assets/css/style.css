@@ -13,291 +13,89 @@ body {
   color: #444444;
 }
 
-.cbp-hrmenu {
-	width: 100%;
-	margin-top: 2em;
-	border-bottom: 4px solid #47a3da;
+ 
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+
+ 
+
+.clients .owl-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
 }
 
-/* general ul style */
-.cbp-hrmenu ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+.clients .owl-item img {
+  height: 80%;
+  transition: 0.3s;
 }
 
-/* first level ul style */
-.cbp-hrmenu > ul,
-.cbp-hrmenu .cbp-hrsub-inner {
-	width: 90%;
-	max-width: 70em;
-	margin: 0 auto;
-	padding: 0 1.875em;
+.clients .owl-item img:hover {
+  opacity: 1;
 }
 
-.cbp-hrmenu > ul > li {
-	display: inline-block;
+.clients .owl-nav, .clients .owl-dots {
+  margin-top: 5px;
+  text-align: center;
 }
 
-.cbp-hrmenu > ul > li > a {
-	font-weight: 700;
-	padding: 1em 2em;
-	color: #999;
-	display: inline-block;
+.clients .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fbe2d8 !important;
 }
 
-.cbp-hrmenu > ul > li > a:hover {
-	color: #47a3da;
+.clients .owl-dot.active {
+  background-color: #0e1af6 !important;
 }
 
-.cbp-hrmenu > ul > li.cbp-hropen a,
-.cbp-hrmenu > ul > li.cbp-hropen > a:hover {
-	color: #fff;
-	background: #47a3da;
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #a3a3a3;
+  background-color: #fff;
+  width: 30%;
+  box-shadow: 0 0px 4px 0 rgb(0 0 0 / 20%), 0 1px 9px 0 rgb(0 0 0 / 16%);
 }
 
-/* sub-menu */
-.cbp-hrmenu .cbp-hrsub {
-	display: none;
-	position: absolute;
-	background: #47a3da;
-	width: 100%;
-	left: 0;
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;border-bottom: 1px solid #ccc;
 }
 
-.cbp-hropen .cbp-hrsub {
-	display: block;
-	padding-bottom: 3em;
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #0057fe; color: #fff;
 }
 
-.cbp-hrmenu .cbp-hrsub-inner > div {
-	width: 33%;
-	float: left;
-	padding: 0 2em 0;
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: rgb(0, 48, 133);color: #fff;
 }
 
-.cbp-hrmenu .cbp-hrsub-inner:before,
-.cbp-hrmenu .cbp-hrsub-inner:after {
-	content: " ";
-	display: table;
-}
-
-.cbp-hrmenu .cbp-hrsub-inner:after {
-	clear: both;
-}
-
-.cbp-hrmenu .cbp-hrsub-inner > div a {
-	line-height: 2em;
-}
-
-.cbp-hrsub h4 {
-	color: #afdefa;
-	padding: 2em 0 0.6em;
-	margin: 0;
-	font-size: 160%;
-	font-weight: 300;
-}
-
-/* Examples for media queries */
-
-@media screen and (max-width: 52.75em) { 
-
-	.cbp-hrmenu {
-		font-size: 80%;
-	}
-
-}
-
-@media screen and (max-width: 43em) { 
-
-	.cbp-hrmenu {
-		font-size: 120%;
-		border: none;
-	}
-
-	.cbp-hrmenu > ul,
-	.cbp-hrmenu .cbp-hrsub-inner {
-		width: 100%;
-		padding: 0;
-	}
-
-	.cbp-hrmenu .cbp-hrsub-inner {
-		padding: 0 2em;
-		font-size: 75%;
-	}
-
-	.cbp-hrmenu > ul > li {
-		display: block;
-		border-bottom: 4px solid #47a3da;
-	}
-
-	.cbp-hrmenu > ul > li > a { 
-		display: block;
-		padding: 1em 3em;
-	}
-
-	.cbp-hrmenu .cbp-hrsub { 
-		position: relative;
-	}
-
-	.cbp-hrsub h4 {
-		padding-top: 0.6em;
-	}
-
-}
-
-@media screen and (max-width: 36em) { 
-	.cbp-hrmenu .cbp-hrsub-inner > div {
-		width: 100%;
-		float: none;
-		padding: 0 2em;
-	}
-}
-
-
-
-
-a {
-	color: #f0f0f0;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #000;
-}
-
-.container > header {
-	width: 90%;
-	max-width: 69em;
-	margin: 0 auto;
-	padding: 0 1.875em 3.125em 1.875em;
-}
-
-.container > header {
-	padding: 2.875em 1.875em 1.875em;
-}
-
-.container > header h1 {
-	font-size: 2.125em;
-	line-height: 1.3;
-	margin: 0 0 0.6em 0;
-	float: left;
-	font-weight: 400;
-}
-
-.container > header > span {
-	display: block;
-	position: relative;
-	z-index: 9999;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 0.5em;
-	padding: 0 0 0.6em 0.1em;
-}
-
-.container > header > span span:after {
-	width: 30px;
-	height: 30px;
-	left: -12px;
-	font-size: 50%;
-	top: -8px;
-	font-size: 75%;
-	position: relative;
-}
-
-.container > header > span span:hover:before {
-	content: attr(data-content);
-	text-transform: none;
-	text-indent: 0;
-	letter-spacing: 0;
-	font-weight: 300;
-	font-size: 110%;
-	padding: 0.8em 1em;
-	line-height: 1.2;
-	text-align: left;
-	left: auto;
-	margin-left: 4px;
-	position: absolute;
-	color: #fff;
-	background: #47a3da;
-}
-
-.container > header nav {
-	float: right;
-	text-align: center;
-}
-
-.container > header nav a {
-	display: inline-block;
-	position: relative;
-	text-align: left;
-	width: 2.5em;
-	height: 2.5em;
-	background: #fff;
-	border-radius: 50%;
-	margin: 0 0.1em;
-	border: 4px solid #47a3da;
-}
-
-.container > header nav a > span {
-	display: none;
-}
-
-.container > header nav a:hover:before {
-	content: attr(data-info);
-	color: #47a3da;
-	position: absolute;
-	width: 600%;
-	top: 120%;
-	text-align: right;
-	right: 0;
-	pointer-events: none;
-}
-
-.container > header nav a:hover {
-	background: #47a3da;
-}
-
-.bp-icon:after {
-	font-family: 'bpicons';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	text-align: center;
-	color: #47a3da;
-	-webkit-font-smoothing: antialiased;
-}
-
-.container > header nav .bp-icon:after {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	line-height: 2;
-	text-indent: 0;
-}
-
-.container > header nav a:hover:after {
-	color: #fff;
-}
-
-.bp-icon-next:after {
-	content: "\e000";
-}
-.bp-icon-drop:after {
-	content: "\e001";
-}
-.bp-icon-archive:after {
-	content: "\e002";
-}
-.bp-icon-about:after {
-	content: "\e003";
-}
-.bp-icon-prev:after {
-	content: "\e004";
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border:1px solid #a3a3a3;
+  width: 70%;
+  border-left: none;
+  height: 351px;
 }
 
 
@@ -321,16 +119,7 @@ a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-.im{width: 276px;}
+.im{width: 224px;}
 
   td, tr{
     text-align: center;
@@ -416,15 +205,11 @@ a:hover {
 .tabcontent {
   color: #3E3E3E;
   display: none;
-  padding: 100px 20px;
-  height: 100%;
+  padding: 65px 20px;
+	background-color: #b5c2ff2b;
 }
 
-#Home {background-color: #fff;}
-#News {background-color: #fff;}
-#Contact {background-color: #fff;}
-#About {background-color: #fff;}
-
+ 
 
 
 
@@ -535,7 +320,21 @@ h1, h2, h3, h4, h5, h6 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+	.tabcontent {  height: 377px!important;
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1378px) {
 	.im{width:232px;}
   }
@@ -696,6 +495,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .dropdown ul li {
   min-width: 200px;
 }
+
 .navbar .dropdown ul a {
   padding: 10px 20px;
   font-weight: 400;
@@ -915,7 +715,10 @@ h1, h2, h3, h4, h5, h6 {
 	#header .logo img {
     max-height: 32px!important;
 }
-	    height: 50vh!important;
+		.tabcontent {
+  height: 426px!important;
+}
+	 
   #hero {
     height: 100vh;
   }
@@ -936,13 +739,18 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     height: 67vh;
   }
+	.tabcontent {
+  height: 401px!important;
+}
 }
 
+
+ 
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
@@ -1088,6 +896,53 @@ section {
 .featured-services .icon-box:hover .icon i {
   color: #fff;
 }
+
+
+
+
+/*--------------------------------------------------------------
+# our products
+--------------------------------------------------------------*/
+.products .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+.products .content ul {
+  list-style: none;
+  padding: 0;
+}
+.products .content ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 35px;
+}
+.products .content ul li:first-child {
+  margin-top: 35px;
+}
+.products .content ul i {
+  background: #fff;
+  box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
+  font-size: 24px;
+  padding: 20px;
+  margin-right: 15px;
+  color: #0057fe;
+  border-radius: 50px;
+}
+.products .content ul h5 {
+  font-size: 18px;
+  color: #555555;
+}
+.products .content ul p {
+  font-size: 15px;
+}
+.products .content p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # About
@@ -1362,11 +1217,15 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #0057fe;
 }
+
 @media (min-width: 992px) {
   .testimonials .testimonial-item p {
     width: 80%;
   }
 }
+
+
+ 
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -1795,6 +1654,7 @@ section {
 }
 .contact .php-email-form .loading:before {
   content: "";
+
   display: inline-block;
   border-radius: 50%;
   width: 24px;
