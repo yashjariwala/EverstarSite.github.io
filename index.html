@@ -143,49 +143,40 @@
           <h3><span>Our</span> Products</h3>
         </div>
 	 <div class="container" data-aos="fade-up">
-	<div class="tab table-responsive-sm">
-  <button class="tablinks" onclick="openCity(event, 'ill')" id="defaultOpen">Illumination</button>
-  <button class="tablinks" onclick="openCity(event, 'cob')">Chip On Board</button>
-  <button class="tablinks" onclick="openCity(event, 'cct')">CCT Colour Tunable</button>
-  <button class="tablinks" onclick="openCity(event, 'uv')">Ultraviolet</button>
-		<button class="tablinks" onclick="openCity(event, 'horti')">Horticulture</button>
-</div>
-
-<div id="ill" class="tabcontent table-responsive-sm">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
-</div>
-
-<div id="cob" class="tabcontent"> 
-
-          <img src="assets/img/3030.jpg" alt=""> 
-   <img src="assets/img/5050.jpg" alt="">  
-	 <img src="assets/img/2535.jpg" alt=""> 
-      
 	 
-	  
+
+  <div  class="col-sm-6">
+        <h3>Left Tabs</h3>
+        <hr/>
+        <div class="col-xs-3"> <!-- required for floating -->
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs tabs-left sideways">
+            <li class="active"><a href="#home-v" data-toggle="tab">Home</a></li>
+            <li><a href="#profile-v" data-toggle="tab">Profile</a></li>
+            <li><a href="#messages-v" data-toggle="tab">Messages</a></li>
+            <li><a href="#settings-v" data-toggle="tab">Settings</a></li>
+          </ul>
         </div>
 
-      
-            
-      
-</div>
+        <div class="col-xs-9">
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="home-v">Home Tab.</div>
+            <div class="tab-pane" id="profile-v">Profile Tab.</div>
+            <div class="tab-pane" id="messages-v">Messages Tab.</div>
+            <div class="tab-pane" id="settings-v">Settings Tab.</div>
+          </div>
+        </div>
 
-<div id="cct" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
+        <div class="clearfix"></div>
+
+      </div>
+
+      
+
 		 
-		 <div id="uv" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
 		 
-		 <div id="horti" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-		 </div>
+	</div> 
 	</section>
 	
 	
@@ -399,29 +390,7 @@
   <script src="assets/vendor/client-js/main.js"></script>
 	
 	<!-- client -->
-	
-	
-	
-	
-	
- <script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
+	 
 
 </body>
 
