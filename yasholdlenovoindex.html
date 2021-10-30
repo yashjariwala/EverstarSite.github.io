@@ -61,6 +61,12 @@
   top: auto;
 
 }
+	.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: 0;
+    margin-top: 1.3em;
+}
+	 
 
 .navbar-toggler {
   border: none;
@@ -128,10 +134,9 @@
   top: 45%;
   transform: rotate(-45deg);
 }
-
+	..navbar>.container-fluid{}
 .icons {
-  display: inline-flex;
-  margin-left: auto;
+  display: inline-flex; 
 }
 .icons a {
   transition: all 0.2s ease-in-out;
@@ -143,6 +148,12 @@
   color: white;
   text-shadow: 0 0 30px white;
 }
+.navbar-expand-lg .navbar-collapse
+{
+padding-block:10px;
+
+}
+
 </style>
 
 <body>
@@ -166,12 +177,12 @@
 
       <!-- ======= Header ======= -->
 
-      <header id="header" class="d-flex align-items-center">
-      </header><!-- End Header -->
-<!-- Start Mega Menu HTML -->
-<nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-dark shadow">
+	<header id="header" class="d-flex align-items-center">
+	  <div class="container d-flex align-items-center justify-content-between">
+	  <!-- Start Mega Menu HTML -->
+<nav class="navbar navbar-expand-lg ">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Bootstrap 5 </a>
+		<a href="index.html"><span><img src="assets/img/Everstar.jpg" width='60%'></span></a>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
         <div class="hamburger-toggle">
           <div class="hamburger">
@@ -186,80 +197,67 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Multilevel</a>
-            <ul class="dropdown-menu shadow">
-              <li><a class="dropdown-item" href="#">Gallery</a></li>
-              <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-              <li class="dropstart">
-                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Submenu Left</a>
-                <ul class="dropdown-menu shadow">
-                  <li><a class="dropdown-item" href=""> Third level 1</a></li>
-                  <li><a class="dropdown-item" href=""> Third level 2</a></li>
-                  <li><a class="dropdown-item" href=""> Third level 3</a></li>
-                  <li><a class="dropdown-item" href=""> Third level 4</a></li>
-                  <li><a class="dropdown-item" href=""> Third level 5</a></li>
-                </ul>
-              </li>
-              <li class="dropend">
-                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Submenu Right</a>
-                <ul class="dropdown-menu shadow">
-                  <li><a class="dropdown-item" href=""> Second level 1</a></li>
-                  <li><a class="dropdown-item" href=""> Second level 2</a></li>
-                  <li><a class="dropdown-item" href=""> Second level 3</a></li>
-                  <li class="dropend">
-                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Let's go deeper!</a>
-                    <ul class="dropdown-menu dropdown-submenu shadow">
-                      <li><a class="dropdown-item" href=""> Third level 1</a></li>
-                      <li><a class="dropdown-item" href=""> Third level 2</a></li>
-                      <li><a class="dropdown-item" href=""> Third level 3</a></li>
-                      <li><a class="dropdown-item" href=""> Third level 4</a></li>
-                      <li><a class="dropdown-item" href=""> Third level 5</a></li>
-                    </ul>
-                  </li>
-                  <li><a class="dropdown-item" href=""> Third level 5</a></li>
-                </ul>
-              </li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+			<li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown dropdown-mega position-static">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Megamenu</a>
+            
+			
+			
+			<li class="nav-item dropdown dropdown-mega position-static">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Products</a>
             <div class="dropdown-menu shadow">
               <div class="mega-content px-4">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-12 col-sm-4 col-md-3 py-4">
-                      <h5>Pages</h5>
+                     
+					  <div class="bg col-12 col-sm-4 col-md-2 py-4 list-group list-group-item">
                       <div class="list-group">
-                        <a class="list-group-item" href="#">Accomodations</a>
-                        <a class="list-group-item" href="#">Terms & Conditions</a>
-                        <a class="list-group-item" href="#">Privacy</a>
+               <img src="assets/2835.png" alt="" width="110"> 
+<h6 style="text-align:left; margin-top: 12px;">2835</h6>
                       </div>
                     </div>
-                    <div class="col-12 col-sm-4 col-md-3 py-4">
-                      <h5>Card</h5>
-                      <div class="card">
-                  <img src="img/banner-image.jpg" class="img-fluid" alt="image">
-                  <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                </div>
-                    </div>
-                    <div class="col-12 col-sm-4 col-md-3 py-4">
-                      <h5>About CodeHim</h5>
-                        <p><b>CodeHim</b> is one of the BEST developer websites that provide web designers and developers with a simple way to preview and download a variety of free code & scripts.</p>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-3 py-4">
-                      <h5>Damn, so many</h5>
+					  
+					  <div class="bg col-12 col-sm-4 col-md-2 py-4 list-group list-group-item">
                       <div class="list-group">
-                        <a class="list-group-item" href="#">Accomodations</a>
-                        <a class="list-group-item" href="#">Terms & Conditions</a>
-                        <a class="list-group-item" href="#">Privacy</a>
+               <img src="assets/3030.png" alt="" width="110"> 
+<h6 style="text-align:left; margin-top: 12px;">3030</h6>
+                      </div>
+                    </div>                   
+                                          
+					  <div class="bg col-12 col-sm-4 col-md-2 py-4 list-group list-group-item">
+                      <div class="list-group">
+               <img src="assets/5050.png" alt="" width="110"> 
+<h6 style="text-align:left; ">5050</h6>
+                      </div>
+                    </div>
+					  <div class="bg col-12 col-sm-4 col-md-2 py-4 list-group list-group-item">
+                      <div class="list-group">
+               <img src="assets/clr.png" alt="" width="110"> 
+<h6 style="text-align:left; margin-top: 12px; ">CCT Colour Tunable</h6>
+                      </div>
+                    </div>
+					  <div class="bg col-12 col-sm-4 col-md-2 py-4 list-group list-group-item">
+                      <div class="list-group">
+               <img src="assets/indoor.png" alt="" width="110"> 
+<h6 style="text-align:left; margin-top: 12px;">Indoor</h6>
+                      </div>
+                    </div>
+					  <div class="bg col-12 col-sm-4 col-md-2 py-4 list-group list-group-item">
+                      <div class="list-group">
+               <img src="assets/outdoor.png" alt="" width="110"> 
+<h6 style="text-align:left; margin-top: 12px;">Outdoor</h6>
+                      </div>
+                    </div>
+					  <div class="bg col-12 col-sm-4 col-md-2 py-4 list-group list-group-item">
+                      <div class="list-group">
+               <img src="assets/horti.png" alt="" width="110"> 
+<h6 style="text-align:left; margin-top: 12px;">Horticulture</h6>
+                      </div>
+                    </div>
+					  <div class="bg col-12 col-sm-4 col-md-2 py-4 list-group list-group-item">
+                      <div class="list-group">
+               <img src="assets/uv.png" alt="" width="110"> 
+<h6 style="text-align:left; margin-top: 12px;">Ultraviolet</h6>
                       </div>
                     </div>
                   </div>
@@ -267,8 +265,62 @@
               </div>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+			
+			
+			
+          <li class="nav-item dropdown dropdown-mega position-static">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Application</a>
+            <div class="dropdown-menu shadow">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12 col-sm-4 col-md-4 py-4">
+                      
+                      <div class="bg list-group list-group-item">
+						  <img src="assets/img/indoor.png" width="60"><h6 style="float: left;margin-top:18px;">Indoor</h6>
+                      </div>
+                    </div>
+                   <div class="col-12 col-sm-4 col-md-4 py-4">
+                      
+                      <div class="bg list-group list-group-item">
+						  <img src="assets/img/outdoor.png" width="60"><h6 style="float: left;margin-top:18px;">Outdoor</h6>
+                      </div>
+                    </div>
+					 
+					  <div class="col-12 col-sm-4 col-md-4 py-4">
+                      
+                      <div class="bg list-group list-group-item">
+						  <img src="assets/img/hospitality.png" width="60"><h6 style="float: left;margin-top:18px;">Hospitality</h6>
+                      </div>
+                    </div>
+					  
+					  <div class="col-12 col-sm-4 col-md-4 py-4">
+                      
+                      <div class="bg list-group list-group-item">
+						  <img src="assets/img/uv.png" width="60"><h6 style="float: left;margin-top:18px;">Ultraviolet</h6>
+                      </div>
+                    </div>
+					  
+					  <div class="col-12 col-sm-4 col-md-4 py-4">
+                      
+                      <div class="bg dropdown-item list-group list-group-item">
+						  <img src="assets/img/medical.png" width="60"><h6 style="float: left;margin-top:18px;">Horticulture</h6>
+                      </div>
+                    </div>
+					
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Stay In Touch</a>
+            <ul class="dropdown-menu shadow">
+              <li><a class="dropdown-item" href="#">Contact Us</a></li>
+             
+               <li><a class="dropdown-item" href="#">Career</a></li>
+               
+            </ul>
           </li>
         </ul>
        
@@ -276,6 +328,10 @@
     </div>
   </nav>
 <!-- END Mega Menu HTML -->
+</div>
+</header>
+
+
   
 			
 
