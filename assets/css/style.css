@@ -18,45 +18,6 @@ body {
 # Desktop Nav
 --------------------------------------------------------------*/
 
-.dropdown-menu[data-bs-popper] {
-    top: 100%;
-    left: 0;
-    margin-top: 1.3em;text-align: right;
-}
-
-.bg:hover{    background-color: #e9ecef;}
-.nav-link {
-      color: #000000!important; 
-}
-
-.cbp-hrmenu .cbp-hrsub {
-    display: none;
-    position: absolute;
-    background: #47a3da;
-    width: 100%;
-    left: 0;
-}
-
-.cbp-hrmenu .cbp-hrsub-inner {
-    width: 90%;
-    max-width: 70em;
-    margin: 0 auto;
-    padding: 0 1.875em;
-}
-
-.cbp-hrmenu .cbp-hrsub-inner > div {
-    width: 33%;
-    float: left;
-    padding: 0 2em 0;
-}
-
-.cbp-hrmenu > ul > li {
-    display: inline-block;
-}
-
-
-
-
 
 @keyframes fadeIn {
   from {
@@ -76,16 +37,10 @@ body {
   position: static;
 }
 .nav-item.dropdown.dropdown-mega .dropdown-menu {
-  width: 100%;
+  width: 90%;
   top: auto;
-
+  left: 5%;
 }
-	.dropdown-menu[data-bs-popper] {
-    top: 100%;
-    left: 0;
-    margin-top: 1.3em;
-}
-	 
 
 .navbar-toggler {
   border: none;
@@ -153,11 +108,10 @@ body {
   top: 45%;
   transform: rotate(-45deg);
 }
-	
-	.navbar>.container-fluid{    flex-wrap: nowrap;}
-	
+
 .icons {
-  display: inline-flex; 
+  display: inline-flex;
+  margin-left: auto;
 }
 .icons a {
   transition: all 0.2s ease-in-out;
@@ -169,18 +123,12 @@ body {
   color: white;
   text-shadow: 0 0 30px white;
 }
-.navbar-expand-lg .navbar-collapse
-{
-padding-block:10px;
+.nav-link{
+  color: black;
+}
+.navbar .container-fluid{
 
 }
-
-
-
-
-
-
-
 
 .main-box {
   display: flex;
