@@ -116,9 +116,9 @@ body {
   position: static;
 }
 .nav-item.dropdown.dropdown-mega .dropdown-menu {
-  width: 90%;
+  width: 100%;
   top: auto;
-  left: 5%;
+ 
 }
 
 .navbar-toggler {
@@ -207,9 +207,9 @@ body {
 }
 .navbar .container-fluid{
   padding-top: 1%;
-  padding-right: 0px;
+  padding-right: 5%;
   padding-bottom: 1%;
-  padding-left: 0px;
+  padding-left: 5%;
 }
 
 .main-box {
@@ -298,7 +298,9 @@ p {
 .justify-content-between {
   justify-content: space-evenly!important;
 }
-
+.list-group-item{
+border: none;
+}
 
 
 
@@ -615,7 +617,6 @@ h1, h2, h3, h4, h5, h6 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
-
 	
 }
 
@@ -823,6 +824,11 @@ h1, h2, h3, h4, h5, h6 {
   #nav-img{
     width: 70% ;
   }
+  .col-md-2 {
+    flex: 0 0 auto;
+    width: 12.50%;
+}
+
 }
  
 @media (max-width: 768px) {
@@ -1355,6 +1361,11 @@ section {
   .testimonials .testimonial-item p {
     width: 80%;
   }
+
+  .navbar-expand-lg .navbar-collapse {
+    display: contents!important;
+    flex-basis: auto;
+}
 	
 	
 }
