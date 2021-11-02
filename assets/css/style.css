@@ -127,7 +127,7 @@ body {
   color: black;
 }
 .navbar .container-fluid{
- 
+ padding: 1%;
 }
 
 .main-box {
@@ -211,8 +211,6 @@ body {
 p {
   line-height: 23px;
 }
-
-
 
 
 
@@ -737,6 +735,9 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     background-attachment: fixed;
   }
+  #nav-img{
+    width: 70% ;
+  }
 }
  
 @media (max-width: 768px) {
@@ -748,12 +749,6 @@ h1, h2, h3, h4, h5, h6 {
     flex: 0 0 auto;
     width: 13.333333%;
 }
-	
-
-	
-	
-	
-	.cbp-hrmenu{display: none;}
 	 
   #hero {
     height: 100vh;
@@ -770,6 +765,15 @@ h1, h2, h3, h4, h5, h6 {
   #hero .btn-get-started, #hero .btn-watch-video {
     font-size: 13px;
   }
+
+  #nav-img{
+    width: 70% ;
+   
+  }
+  #nava{
+    display: contents;
+  }
+
 }
 @media (max-height: 500px) {
   #hero {
