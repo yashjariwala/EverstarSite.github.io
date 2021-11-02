@@ -188,7 +188,7 @@ body {
   transform: rotate(-45deg);
 }
 
-.icons {
+.icons {  
   display: inline-flex;
   margin-left: auto;
 }
@@ -206,7 +206,10 @@ body {
   color: black;
 }
 .navbar .container-fluid{
- 
+  padding-top: 1%;
+  padding-right: 0px;
+  padding-bottom: 1%;
+  padding-left: 0px;
 }
 
 .main-box {
@@ -292,7 +295,9 @@ p {
   line-height: 23px;
 }
 
-
+.justify-content-between {
+  justify-content: space-evenly!important;
+}
 
 
 
@@ -815,23 +820,24 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     background-attachment: fixed;
   }
+  #nav-img{
+    width: 70% ;
+  }
 }
  
 @media (max-width: 768px) {
 	#header .logo img {
     max-height: 32px!important;
-}
+} 
+
+
 	
 	.col-md-1 {
     flex: 0 0 auto;
     width: 13.333333%;
 }
-	
 
-	
-	
-	
-	.cbp-hrmenu{display: none;}
+
 	 
   #hero {
     height: 100vh;
@@ -848,6 +854,19 @@ h1, h2, h3, h4, h5, h6 {
   #hero .btn-get-started, #hero .btn-watch-video {
     font-size: 13px;
   }
+
+  #nav-img{
+    width: 70% ;
+   
+  }
+  #nava{
+    display: contents;
+  }
+
+  #topbar .ms-4{
+      margin-left: 0.5rem !important;
+  }
+
 }
 @media (max-height: 500px) {
   #hero {
