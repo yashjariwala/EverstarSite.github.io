@@ -743,12 +743,16 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
 	#header .logo img {
     max-height: 32px!important;
-}
+} 
+
+
 	
 	.col-md-1 {
     flex: 0 0 auto;
     width: 13.333333%;
 }
+
+
 	 
   #hero {
     height: 100vh;
@@ -772,6 +776,10 @@ h1, h2, h3, h4, h5, h6 {
   }
   #nava{
     display: contents;
+  }
+
+  #topbar .ms-4{
+      margin-left: 0.5rem !important;
   }
 
 }
