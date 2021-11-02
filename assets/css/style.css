@@ -215,6 +215,10 @@ p {
   line-height: 23px;
 }
 
+.justify-content-between {
+  justify-content: space-evenly!important;
+}
+
 
 
 
