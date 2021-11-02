@@ -127,7 +127,10 @@ body {
   color: black;
 }
 .navbar .container-fluid{
- padding: 1%;
+  padding-top: 1%;
+  padding-right: 0px;
+  padding-bottom: 1%;
+  padding-left: 0px;
 }
 
 .main-box {
