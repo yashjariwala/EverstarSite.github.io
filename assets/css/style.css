@@ -640,9 +640,7 @@ h1, h2, h3, h4, h5, h6 {
  .dropdown-menu[data-bs-popper] {
     top: 100%;
     left: 0;
-    margin-top: 0.2
-em
-;
+    margin-top: 0.2em;
 }
 
  
@@ -751,10 +749,8 @@ em
     width: 13.333333%;
 }
 	
- .col-md-2 {
- 
-    width: 11.666667%!important;
-}
+
+	
 	
 	
 	.cbp-hrmenu{display: none;}
@@ -788,8 +784,6 @@ em
   .breadcrumbs ol li {
     display: inline-block;
   }
-	
-	
 	
 }
 
@@ -858,7 +852,10 @@ section {
   .breadcrumbs h2 {
     margin: 0 0 10px 0;
   }
+
+
 }
+ 
 .breadcrumbs ol {
   display: flex;
   flex-wrap: wrap;
@@ -1261,6 +1258,8 @@ section {
   .testimonials .testimonial-item p {
     width: 80%;
   }
+	
+	
 }
 
 
