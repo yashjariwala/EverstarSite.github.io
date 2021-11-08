@@ -30,14 +30,10 @@ body {
 	overflow: hidden; 
 	min-height: 290px;
 }
-.carousel .carousel-item .img-box {
-<<<<<<< HEAD
-	width: 220px; 
-=======
+.carousel .carousel-item .img-box { 
+	width: 220px;  
 	width: 220px;
- 
->>>>>>> 423c276445ce03050c9273d8863fdd4cb98b1ef5
-    margin: 0 auto;
+ margin: 0 auto;
 }
 .carousel .img-box img {
 	width: 100%;
@@ -839,6 +835,13 @@ margin-top: 2.2em;
 	#header .logo img {
     max-height: 32px!important;
 } 
+	
+	.main-box {
+    display: flex;
+    background: #0a58ca;
+    margin: 0 200px 70px 18px;
+    width: 649px;
+}
 
  
 	
