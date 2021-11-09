@@ -7,6 +7,9 @@
 (function() {
   "use strict";
 
+
+
+
   /**
    * Easy selector helper function
    */
@@ -267,7 +270,7 @@
       clickable: true
     }
   });
-
+  
   /**
    * Animation on scroll
    */
@@ -279,5 +282,9 @@
       mirror: false
     })
   });
+
+  
+
+  
 
 })()

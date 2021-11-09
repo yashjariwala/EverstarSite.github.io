@@ -235,8 +235,8 @@
 		    <section class="featured-services " >
 				
 	  <button class="tablink" onclick="openPage('LowPower', this, '#003085')" id="defaultOpen">LOW POWER</button>
-<button class="tablink" onclick="openPage('MidPower', this, '#003085')">MID POWER</button>
-<button class="tablink" onclick="openPage('HighPower', this, '#003085')">HIGH POWER</button>
+<button class="tablink" onclick="openPage('MidPower', this, '#003085')" id="MidPowerbutton">MID POWER</button>
+<button class="tablink" onclick="openPage('HighPower', this, '#003085')" id="HighPowerButton">HIGH POWER</button>
 
 <div id="LowPower" class="tabcontent " style="    border: 1px solid #818181;" >
  
@@ -960,6 +960,18 @@ function openPage(pageName,elmnt,color) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+window.onload = function() {
+  if(window.location.href.indexOf("mid") > -1) {
+    document.getElementById("MidPowerbutton").click();
+};
+  if(window.location.href.indexOf("high") > -1) {
+    document.getElementById("HighPowerButton").click();
+};
+};
+
+
+
 </script>
 	
 	
