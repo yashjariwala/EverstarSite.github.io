@@ -26,7 +26,6 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/default.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/component.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 
@@ -767,19 +766,12 @@
 
     $('.box').css({ "width": slidecal });
 
-    $('.box').click(function () {
-      console.log("box clicked");
-      var boxybar = document.getElementById('box');
-      console.log(boxybar.className);
-      if (boxybar.classList.contains('active')) {
+    $('.box').click(function(){
         $('.box').removeClass('active');
-        return;
-      }
-      else {
-        $('.box').removeClass('active');
-        $(this).addClass('active');
-      }
+       $(this).addClass('active');
     });
+
+    
     $(document).ready(function () {
 
       if ($('.brands_slider').length) {
