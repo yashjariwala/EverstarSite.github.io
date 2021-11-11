@@ -23,12 +23,12 @@ body {
 
 .brands {
   width: 100%;
-  padding-top: 90px;
-  padding-bottom: 90px
+  padding-top: 30px;
+  padding-bottom: 30px
 }
 
 .brands_slider_container {
-  height: 130px;
+  height: 230px;
   border: solid 1px #e8e8e8;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
   padding-left: 97px;
@@ -569,6 +569,19 @@ border: none;
 	border-left:1px solid #fff;
 }
 
+.tablinks {
+  background-color: #0056fb;
+  color: #fff;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 50%;
+	border-left:1px solid #fff;
+}
+
 .tablink:hover {
   background-color: #247cf0;
 }
@@ -895,7 +908,7 @@ margin-top: 2.2em;
   }
   .col-md-2 {
     flex: 0 0 auto;
-    width: 12.50%;
+       width: 11.1%;
 }
 
 }
