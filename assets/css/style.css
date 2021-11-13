@@ -13,13 +13,26 @@ body {
   color: #444444;
 }
 
+ 
+
 .featured-services {
   padding: 6.5%;
 }
 
+.xx{float: left;}
+ 
+
+
+
+
+
 /*--------------------------------------------------------------
 # Mobile Products Scroll
 --------------------------------------------------------------*/
+.mob{display: none;}
+
+.desk{display: block;}
+
 
 .brands {
   width: 100%;
@@ -287,7 +300,7 @@ body {
   background: #0a58ca;
   margin: 0px auto 70px auto;
   padding: 0;
-  width: 991px;
+  width: 1254px!important;
 }
 
 .box {
@@ -699,7 +712,11 @@ h1, h2, h3, h4, h5, h6 {
     transition-delay: 0 !important;
   }
 	
-}
+.mob{display: block;}
+	
+
+.desk{display: none;}
+	
 
 
 .col-md-1 {
@@ -707,7 +724,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 13.333333%;
 }
 
-
+}
 
 
 
@@ -933,10 +950,9 @@ margin-top: 2.2em;
 }
 
 
-	 
-  #hero {
-    height: 100vh;
-  }
+	#hero {
+    height: 52vh!important;
+}
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -965,7 +981,7 @@ margin-top: 2.2em;
 }
 @media (max-height: 500px) {
   #hero {
-    height: 67vh;
+    height: 67vh!important;
   }
   .breadcrumbs .d-flex {
     display: block !important;
@@ -976,10 +992,12 @@ margin-top: 2.2em;
   .breadcrumbs ol li {
     display: inline-block;
   }
-	
+	#hero {
+    height: 52vh!important;
+}
 }
 
-
+ 
  
 /*--------------------------------------------------------------
 # Sections General
@@ -1024,9 +1042,13 @@ section {
 @media (min-width: 1024px) {
   .section-title p {
     width: 50%;
+	 
   }
+	.main-box {
+    width: 1000px;
 }
-
+}
+.featured-services .icon-box:hover .title a, .featured-services .icon-box:hover .description {color: #fff!important;}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -1044,7 +1066,9 @@ section {
   .breadcrumbs h2 {
     margin: 0 0 10px 0;
   }
-
+	
+.main-box { width: 750px!important;
+}
 
 }
  
@@ -1113,6 +1137,7 @@ section {
 .featured-services .title a {
   color: #111;
 }
+  
 .featured-services .description {
   font-size: 15px; 
   line-height: 28px;
@@ -1124,8 +1149,6 @@ section {
 .featured-services .icon-box:hover .icon i {
   color: #fff;
 }
-
-
 
 
 /*--------------------------------------------------------------
@@ -1188,17 +1211,15 @@ section {
   align-items: flex-start;
   margin-bottom: 35px;
 }
-.about .content ul li:first-child {
-  margin-top: 35px;
-}
+ 
 .about .content ul i {
-  background: #fff;
-  box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
-  font-size: 24px;
-  padding: 20px;
-  margin-right: 15px;
-  color: #0057fe;
-  border-radius: 50px;
+    background: #0057fe;
+    box-shadow: 0px 6px 15px rgb(16 110 234 / 22%);
+    font-size: 24px;
+    padding: 8px;
+    margin-right: 15px;
+    color: #0057fe;
+    border-radius: 37px;
 }
 .about .content ul h5 {
   font-size: 18px;
