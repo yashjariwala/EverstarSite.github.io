@@ -277,8 +277,8 @@
 		    <section class="featured-services " >
 				
 	<button class="tablink" onclick="openPage('outdoor', this, '#003085')" id="defaultOpen">HIGH POWER COB</button>
-<button class="tablink" onclick="openPage('MidPower', this, '#003085')" id="MidPowerbutton">MID POWER</button>
-<button class="tablink" onclick="openPage('HighPower', this, '#003085')" id="HighPowerButton">HIGH POWER</button>
+<button class="tablink" onclick="openPage('MidPower', this, '#003085')" id="MidPowerbutton">MID POWER LED</button>
+<button class="tablink" onclick="openPage('HighPower', this, '#003085')" id="HighPowerButton">HIGH POWER LED</button>
 
 <div id="outdoor" class="tabcontent" style="    border: 1px solid #818181;">
         <div class="row">
@@ -315,12 +315,12 @@
             <thead style="background-color: #256ae5; color: #fff;">
               <tr>
                 <th>Part No.</th>
-                <th>Color</th>
                 <th>Power</th>
                 <th>Size(mm)</th>
                 <th>VF</th>
                 <th>IF</th>
                 <th>Flux</th>
+                <th>LES</th>
                 <th>CCT/Wavelength(nm)</th>
                 <th>CRI</th>
                 <th>Certificate</th>
@@ -332,27 +332,27 @@
                 <td>ES-25-ES050-1650-XXXXX</td>
                 <td>50W</td>
                 <td>46*40*1.5</td>
-                <td>36V</td>
-                <td>1050-1800mA</td>
-                <td>128-135</td>
+                <td>32V</td>
+                <td>1650mA</td>
+                <td>5160-6150</td>
                 <td>24.5</td>
-                <td>2700-6000</td>
-                <td>80</td>
-                <td>LM80</td>
-                <td><a href="pdf/ES-25-ES050-1650-XXXXX.pdf" target="_blank">Download</a></td>
+                <td>2700-6000K</td>
+                <td>70</td>
+                <td>-</td>
+                <td class="download"><a href="pdf/ES-25-ES050-1650-XXXXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
               </tr>
               <tr>
                 <td>ES-25-ES100-3200-XXXXX</td>
-                <td>50W</td>
+                <td>100W</td>
                 <td>46*40*1.5</td>
-                <td>36V</td>
-                <td>1050-1800mA</td>
-                <td>128-135</td>
+                <td>32V</td>
+                <td>3200mA</td>
+                <td>11750-12000</td>
                 <td>24.5</td>
-                <td>2700-6000</td>
-                <td>80</td>
-                <td>LM80</td>
-                <td><a href="pdf/ES-25-ES100-3200-XXXXX.pdf" target="_blank">Download</a></td>
+                <td>2700-6000K</td>
+                <td>70</td>
+                <td>-</td>
+                <td class="download"><a href="pdf/ES-25-ES100-3200-XXXXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
               </tr>
 
 
@@ -365,14 +365,14 @@
 	
 	
 	
-<div id="MidPower" class="tabcontent" style="    border: 1px solid #818181;"> 
-    <div class="tabs">
+<div id="MidPower" class="tabcontent" style="    border: 1px solid #818181;">
+        <div class="tabs">
           <input type="radio" name="tabs" id="tabone" checked="checked">
           <label for="tabone">2835 1W</label>
           <div class="tab">
             <div class="row">
-              <div class="col-md-4">
-                <img src="assets/img/2835.jpg" alt="" width="100%">
+              <div class="col-md-4 col-lg-4" > 
+				  <img src="assets/img/2835.jpg" alt="" width="100%">
               </div>
               <div class="col-md-8">
                 <h5>Product Introduction</h5>
@@ -424,210 +424,313 @@
                     <td>ES-2835-106V-XX-XXX</td>
                     <td>White</td>
                     <td>1W</td>
-                    <td>3.5*2.8*0.68</td>
+                    <td>2.8*3.5*0.68</td>
                     <td>6V</td>
                     <td>150mA</td>
                     <td>130-140</td>
-                    <td>2700-7000</td>
+                    <td>2700-7000K</td>
                     <td>80</td>
-                    <td>LM80</td>
-                    <td><a href="pdf/ES-2835-106V-XX-XXX.pdf" target="_blank">Download</a></td>
+                    <td class="download"><a href="lm80/ES-2835-106V LM-80.pdf" target="_blank">LM80</a></td>
+                    <td class="download"><a href="pdf/ES-2835-106V-XX-XXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
                   </tr>
+                  
+
+                </tbody>
+              </table>
+            </div>
+			  <br>
+<br>
+<div class="table-responsive">
+              <table class="table table-striped thead-default table-bordered table-responsive">
+                <thead style="background-color: #256ae5; color: #fff;">
+                  <tr>
+                    <th>Part No.</th>
+                    <th>Color</th>
+                    <th>Power</th>
+                    <th>Size(mm)</th>
+                    <th>VF</th>
+                    <th>IF</th>
+                    <th>Flux</th>
+                    <th>CCT/Wavelength(nm)</th>
+                    <th>CRI</th>
+                    <th>Certificate</th>
+                    <th>Datasheet</th>
+                  </tr>
+                </thead>
+                <tbody>
+                   
                   <tr>
                     <td>ES-2835-109V-XX-XXX</td>
                     <td>White</td>
                     <td>1W</td>
-                    <td>3.5*2.8*0.68</td>
+                    <td>2.8*3.5*0.68</td>
                     <td>9V</td>
                     <td>100mA</td>
                     <td>130-140</td>
-                    <td>2700-7000</td>
+                    <td>2700-7000K</td>
                     <td>80</td>
-                    <td>LM80</td>
-                    <td><a href="pdf/ES-2835-109V-XX-XXX.pdf" target="_blank">Download</a></td>
+                    <td class="download"><a href="lm80/ES-2835-109V LM-80.pdf" target="_blank">LM80</a></td>
+                    <td class="download"><a href="pdf/ES-2835-109V-XX-XXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
                   </tr>
                   <tr>
                     <td>ES-2835-109V-L1-RXXX</td>
                     <td>Red</td>
                     <td>1W</td>
-                    <td>3.5*2.8*0.68</td>
+                    <td>2.8*3.5*0.68</td>
                     <td>9V</td>
                     <td>100mA</td>
                     <td>28-30</td>
-                    <td>630-640</td>
+                    <td>637nm</td>
                     <td>80</td>
-                    <td>LM80</td>
-                    <td><a href="pdf/ES-2835-109V-L1-XXXX.pdf" target="_blank">Download</a></td>
+                    <td>-</td>
+                    <td class="download"><a href="pdf/ES-2835-109V-L1-XXXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
                   </tr>
                   <tr>
                     <td>ES-2835-109V-L1-GXXX</td>
                     <td>Green</td>
                     <td>1W</td>
-                    <td>3.5*2.8*0.68</td>
+                    <td>2.8*3.5*0.68</td>
                     <td>9V</td>
                     <td>100mA</td>
                     <td>160-180</td>
-                    <td>520-530</td>
+                    <td>525nm</td>
                     <td>80</td>
-                    <td>LM80</td>
-                    <td><a href="pdf/ES-2835-109V-L1-XXXX.pdf" target="_blank">Download</a></td>
+                    <td>-</td>
+                    <td class="download"><a href="pdf/ES-2835-109V-L1-XXXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
                   </tr>
                   <tr>
                     <td>ES-2835-109V-L1-BXXX</td>
                     <td>Blue</td>
                     <td>1W</td>
-                    <td>3.5*2.8*0.68</td>
+                    <td>2.8*3.5*0.68</td>
                     <td>9V</td>
                     <td>100mA</td>
                     <td>14-16</td>
-                    <td>455-465</td>
+                    <td>460nm</td>
                     <td>80</td>
-                    <td>LM80</td>
-                    <td><a href="pdf/ES-2835-109V-L1-XXXX.pdf" target="_blank">Download</a></td>
+                    <td>-</td>
+                    <td class="download"><a href="pdf/ES-2835-109V-L1-XXXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
                   </tr>
                   <tr>
                     <td>ES-2835-109V-L1-PXXX</td>
                     <td>Pink</td>
                     <td>1W</td>
-                    <td>3.5*2.8*0.68</td>
+                    <td>2.8*3.5*0.68</td>
                     <td>9V</td>
                     <td>100mA</td>
                     <td>60-70</td>
-                    <td>2050</td>
+                    <td>PINK</td>
                     <td>80</td>
-                    <td>LM80</td>
-                    <td><a href="pdf/ES-2835-109V-L1-XXXX.pdf" target="_blank">Download</a></td>
+                    <td>-</td>
+                    <td class="download"><a href="pdf/ES-2835-109V-L1-XXXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
                   </tr>
+                  
+
+                </tbody>
+              </table>
+            </div><br>
+<br>
+<div class="table-responsive">
+              <table class="table table-striped thead-default table-bordered table-responsive">
+                <thead style="background-color: #256ae5; color: #fff;">
+                  <tr>
+                    <th>Part No.</th>
+                    <th>Color</th>
+                    <th>Power</th>
+                    <th>Size(mm)</th>
+                    <th>VF</th>
+                    <th>IF</th>
+                    <th>Flux</th>
+                    <th>CCT/Wavelength(nm)</th>
+                    <th>CRI</th>
+                    <th>Certificate</th>
+                    <th>Datasheet</th>
+                  </tr>
+                </thead>
+                <tbody>
+                   
                   <tr>
                     <td>ES-2835-1018V-XX-XXX</td>
                     <td>White</td>
                     <td>1W</td>
-                    <td>3.5*2.8*0.68</td>
+                    <td>2.8*3.5*0.68</td>
                     <td>18V</td>
                     <td>60mA</td>
                     <td>150-160</td>
-                    <td>2700-7000</td>
+                    <td>2700-7000K</td>
                     <td>80</td>
-                    <td>LM80</td>
-                    <td><a href="pdf/ES-2835-1018V-XX-XXX.pdf" target="_blank">Download</a></td>
+                    <td class="download"><a href="lm80/ES-2835-1018V LM-80.pdf" target="_blank">LM80</a></td>
+                    <td class="download"><a href="pdf/ES-2835-1018V-XX-XXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
                   </tr>
                   <tr>
                     <td>ES-2835-1018V-L1-RXXX</td>
                     <td>Red</td>
                     <td>1W</td>
-                    <td>3.5*2.8*0.68</td>
+                    <td>2.8*3.5*0.68</td>
                     <td>18V</td>
                     <td>60mA</td>
                     <td>30-34</td>
-                    <td>630-640</td>
+                    <td>637nm</td>
                     <td>80</td>
-                    <td>LM80</td>
-                    <td><a href="pdf/ES-2835-1018V-L1-XXXX.pdf" target="_blank">Download</a></td>
+                    <td>-</td>
+                    <td class="download"><a href="pdf/ES-2835-1018V-L1-XXXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
                   </tr>
                   <tr>
                     <td>ES-2835-1018V-L1-GXXX</td>
                     <td>Green</td>
                     <td>1W</td>
-                    <td>3.5*2.8*0.68</td>
+                    <td>2.8*3.5*0.68</td>
                     <td>18V</td>
                     <td>60mA</td>
                     <td>160-180</td>
-                    <td>520-530</td>
+                    <td>525nm</td>
                     <td>80</td>
-                    <td>LM80</td>
-                    <td><a href="pdf/ES-2835-1018V-L1-XXXX.pdf" target="_blank">Download</a></td>
+                    <td>-</td>
+                    <td class="download"><a href="pdf/ES-2835-1018V-L1-XXXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
                   </tr>
                   <tr>
                     <td>ES-2835-1018V-L1-BXXX</td>
                     <td>Blue</td>
                     <td>1W</td>
-                    <td>3.5*2.8*0.68</td>
+                    <td>2.8*3.5*0.68</td>
                     <td>18V</td>
                     <td>60mA</td>
                     <td>18-22</td>
-                    <td>455-465</td>
+                    <td>460nm</td>
                     <td>80</td>
-                    <td>LM80</td>
-                    <td><a href="pdf/ES-2835-1018V-L1-XXXX.pdf" target="_blank">Download</a></td>
+                    <td>-</td>
+                    <td class="download"><a href="pdf/ES-2835-1018V-L1-XXXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
                   </tr>
                   <tr>
                     <td>ES-2835-1018V-L1-PXXX</td>
                     <td>Pink</td>
                     <td>1W</td>
-                    <td>3.5*2.8*0.68</td>
+                    <td>2.8*3.5*0.68</td>
                     <td>18V</td>
                     <td>60mA</td>
                     <td>90-100</td>
-                    <td>2050</td>
+                    <td>PINK</td>
                     <td>80</td>
-                    <td>LM80</td>
-                    <td><a href="pdf/ES-2835-1018V-L1-XXXX.pdf" target="_blank">Download</a></td>
+                    <td>-</td>
+                    <td class="download"><a href="pdf/ES-2835-1018V-L1-XXXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
                   </tr>
+					<tr>
+                    <td>ES-2835-1018V-L1-YXXX</td>
+                    <td>Yellow</td>
+                    <td>1W</td>
+                    <td>2.8*3.5*0.68</td>
+                    <td>18V</td>
+                    <td>60mA</td>
+                    <td>125-135</td>
+                    <td>585nm</td>
+                    <td>80</td>
+                    <td>-</td>
+                    <td class="download"><a href="pdf/ES-2835-1018V-L1-XXXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
+                  </tr>
+			 
+					</tbody>
+              </table>
+            </div><br>
+<br>
+<div class="table-responsive">
+              <table class="table table-striped thead-default table-bordered table-responsive">
+                <thead style="background-color: #256ae5; color: #fff;">
+                  <tr>
+                    <th>Part No.</th>
+                    <th>Color</th>
+                    <th>Power</th>
+                    <th>Size(mm)</th>
+                    <th>VF</th>
+                    <th>IF</th>
+                    <th>Flux</th>
+                    <th>CCT/Wavelength(nm)</th>
+                    <th>CRI</th>
+                    <th>Certificate</th>
+                    <th>Datasheet</th>
+                  </tr>
+                </thead>
+                <tbody>
+					
                   <tr>
                     <td>ES-2835-1036V-XX-XXX</td>
                     <td>White</td>
                     <td>1W</td>
-                    <td>3.5*2.8*0.68</td>
+                    <td>2.8*3.5*0.68</td>
                     <td>36V</td>
                     <td>30mA</td>
                     <td>140-150</td>
-                    <td>2700-7000</td>
+                    <td>2700-7000K</td>
                     <td>80</td>
-                    <td>LM80</td>
-                    <td><a href="pdf/ES-2835-1036V-XX-XXXX.pdf" target="_blank">Download</a></td>
+                    <td>-</td>
+                    <td class="download"><a href="pdf/ES-2835-1036V-XX-XXXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
                   </tr>
                   <tr>
                     <td>ES-2835-1036V-L1-RXXX</td>
                     <td>Red</td>
                     <td>1W</td>
-                    <td>3.5*2.8*0.68</td>
+                    <td>2.8*3.5*0.68</td>
                     <td>36V</td>
                     <td>30mA</td>
-                    <td>140-150</td>
-                    <td>630-640</td>
+                    <td>30-40</td>
+                    <td>637nm</td>
                     <td>80</td>
-                    <td>LM80</td>
-                    <td><a href="pdf/ES-2835-1036V-XX-XXXX.pdf" target="_blank">Download</a></td>
+                    <td>-</td>
+                    <td class="download"><a href="pdf/ES-2835-1036V-L1-XXXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
                   </tr>
                   <tr>
                     <td>ES-2835-1036V-L1-GXXX</td>
                     <td>Green</td>
                     <td>1W</td>
-                    <td>3.5*2.8*0.68</td>
+                    <td>2.8*3.5*0.68</td>
                     <td>36V</td>
                     <td>30mA</td>
-                    <td>140-150</td>
-                    <td>520-530</td>
+                    <td>160-180</td>
+                    <td>525nm</td>
                     <td>80</td>
-                    <td>LM80</td>
-                    <td><a href="pdf/ES-2835-1036V-XX-XXXX.pdf" target="_blank">Download</a></td>
+                    <td>-</td>
+                    <td class="download"><a href="pdf/ES-2835-1036V-L1-XXXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
                   </tr>
                   <tr>
                     <td>ES-2835-1036V-L1-BXXX</td>
                     <td>Blue</td>
                     <td>1W</td>
-                    <td>3.5*2.8*0.68</td>
+                    <td>2.8*3.5*0.68</td>
                     <td>36V</td>
                     <td>30mA</td>
-                    <td>140-150</td>
-                    <td>455-465</td>
+                    <td>18-22</td>
+                    <td>460nm</td>
                     <td>80</td>
-                    <td>LM80</td>
-                    <td><a href="pdf/ES-2835-1036V-XX-XXXX.pdf" target="_blank">Download</a></td>
+                    <td>-</td>
+                    <td class="download"><a href="pdf/ES-2835-1036V-L1-XXXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
                   </tr>
                   <tr>
                     <td>ES-2835-1036V-L1-PXXX</td>
                     <td>Pink</td>
                     <td>1W</td>
-                    <td>3.5*2.8*0.68</td>
+                    <td>2.8*3.5*0.68</td>
                     <td>36V</td>
                     <td>30mA</td>
-                    <td>140-150</td>
-                    <td>2050</td>
+                    <td>90-100</td>
+                    <td>PINK</td>
                     <td>80</td>
-                    <td>LM80</td>
-                    <td><a href="pdf/ES-2835-1036V-XX-XXXX.pdf" target="_blank">Download</a></td>
+                    <td>-</td>
+                    <td class="download"><a href="pdf/ES-2835-1036V-L1-XXXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
                   </tr>
+				  <tr>
+                    <td>ES-2835-1036V-L1-YXXX</td>
+                    <td>Yellow</td>
+                    <td>1W</td>
+                    <td>2.8*3.5*0.68</td>
+                    <td>36V</td>
+                    <td>30mA</td>
+                    <td>125-135</td>
+                    <td>585nm</td>
+                    <td>80</td>
+                    <td>-</td>
+                    <td class="download"><a href="pdf/ES-2835-1036V-L1-XXXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
+                  </tr>
+					
+                  
 
                 </tbody>
               </table>
@@ -697,12 +800,12 @@
                     <td>1W</td>
                     <td>3.0*3.0*0.52</td>
                     <td>6V</td>
-                    <td>150mA</td>
-                    <td>140-150</td>
-                    <td>2700-6500</td>
+                    <td>200mA</td>
+                    <td>120-150</td>
+                    <td>2700-6500K</td>
                     <td>80</td>
-                    <td>LM80</td>
-                    <td><a href="pdf/ES-E3030-106V-XX-XXX.pdf" target="_blank">Download</a></td>
+                    <td>-</td>
+                    <td class="download"><a href="pdf/ES-E3030-106V-XX-XXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
                   </tr>
                   <tr>
                     <td>ES-P3030-106V-XX-XXX-XX</td>
@@ -710,12 +813,12 @@
                     <td>1W</td>
                     <td>3.0*3.0*0.52</td>
                     <td>6V</td>
-                    <td>150mA</td>
-                    <td>140-150</td>
-                    <td>2700-6500</td>
+                    <td>200mA</td>
+                    <td>120-155</td>
+                    <td>2700-6500K</td>
                     <td>80</td>
-                    <td>LM80</td>
-                    <td><a href="pdf/ES-P3030-106V-XX-XXX.pdf" target="_blank">Download</a></td>
+                    <td>-</td>
+                    <td class="download"><a href="pdf/ES-P3030-106V-XX-XXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
                   </tr>
 
 
@@ -726,9 +829,10 @@
 
 
         </div>
-	
-	
-</div>
+
+
+      </div>
+				
 
 	
 	
@@ -736,11 +840,11 @@
 	
 
 <div id="HighPower" class="tabcontent" style="border-style: groove;">
-  <div class="row">
-      <div  class="col-md-4">
-        <img src="assets/img/5050.jpg" alt="" width="100%" >
-      </div>
-      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="assets/img/5050.jpg" alt="" width="100%">
+          </div>
+          <div class="col-md-8">
             <h5>Product Introduction</h5>
             This is EMC Package 5050 LED light source is a energy
 efficient device which can handle high thermal and high driving current. The small package outline and high intensity make it an ideal choice for outdoor lighting LED.
@@ -764,54 +868,67 @@ This part has a foot print that is compatible to most of the same size LED in th
 		    - Landscape lighting<br>
             - Architectural/ Decorative lighting<br> </div>
           </div>
-    </div>
-    <br>
+        </div>
+        <br>
 
-  <div class="table-responsive">
-  <table class="table table-striped thead-default table-bordered table-responsive" >
-    <thead style="background-color: #256ae5; color: #fff;">
-      <tr>
-        <th>Part No.</th>
-        <th>Color</th>
-        <th>Power</th>
-        <th>Size(mm)</th>
-        <th>VF</th>
-        <th>IF</th>
-        <th>Flux</th>
-        <th>CCT/Wavelength(nm)</th>
-        <th>CRI</th>
-        <th>Certificate</th>
-        <th>Datasheet</th>
-      </tr>
-    </thead>
-    <tbody>
-		 <tr>
-        <td>ES-E5050-506V-XX-XXX</td>
-        <td>White</td>
-        <td>5W</td>
-        <td>5.0*5.0*0.52</td>
-        <td>6V</td>
-        <td>800mA</td>
-        <td>720-870</td>
-        <td>2700-7000</td>
-        <td>70/80</td>
-        <td>LM80</td>
-        <td><a href="pdf/ES-E5050-506V-XX-XXX.pdf" target="_blank">Download</a></td>
-      </tr>
-    
-    </tbody>
-  </table>
-  </div>
- 
-   
+        <div class="table-responsive">
+          <table class="table table-striped thead-default table-bordered table-responsive">
+            <thead style="background-color: #256ae5; color: #fff;">
+              <tr>
+                <th>Part No.</th>
+                <th>Color</th>
+                <th>Power</th>
+                <th>Size(mm)</th>
+                <th>VF</th>
+                <th>IF</th>
+                <th>Flux</th>
+                <th>CCT/Wavelength(nm)</th>
+                <th>CRI</th>
+                <th>Certificate</th>
+                <th>Datasheet</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ES-E5050-506V-XX-XXX</td>
+                <td>White</td>
+                <td>5W</td>
+                <td>5.0*5.0*0.52</td>
+                <td>6V</td>
+                <td>800mA</td>
+                <td>720-870</td>
+                <td>2700-7000K</td>
+                <td>70</td>
+                <td>-</td>
+                <td class="download"><a href="pdf/ES-E5050-506V-XX-XXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
+              </tr>
+				    <tr>
+                <td>ES-E5050-506V-XX-XXX</td>
+                <td>White</td>
+                <td>5W</td>
+                <td>5.0*5.0*0.52</td>
+                <td>6V</td>
+                <td>800mA</td>
+                <td>720-870</td>
+                <td>2700-7000K</td>
+                <td>80</td>
+                <td>-</td>
+                <td ><a href="pdf/ES-E5050-506V-XX-XXX.pdf" target="_blank"><i class="bx bi-download"></i> Download</a></td>
+              </tr>
 
-	
-	 
-	
-	
-	
-	
-</div>
+            </tbody>
+          </table>
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
 	  
 	
 	

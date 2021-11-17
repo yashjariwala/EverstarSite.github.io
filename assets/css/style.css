@@ -10,10 +10,10 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #444444;    font-size: 17px;
 }
 
- 
+p{ font-size: 17px;}
 
 .featured-services {
   padding: 6.5%;
@@ -21,9 +21,9 @@ body {
 
 .xx{float: left;}
  
+.download:hover{color: #0d6efd; font-weight: bold; }
 
-
-
+.download a{color: #0d6efd!important;  }
 
 
 /*--------------------------------------------------------------
@@ -540,7 +540,8 @@ border: none;
 	display: none;
 }
 .tabs input[type="radio"]:checked + label {
-	background: #d5ecff;
+background: #ddf0ff;
+    border: 2px solid #9b90f952;
 }
 .tabs input[type="radio"]:checked + label + .tab {
 	display: block;
@@ -925,7 +926,7 @@ margin-top: 2.2em;
   }
   .col-md-2 {
     flex: 0 0 auto;
-       width: 11.1%;
+       width: 12.50%;
 }
 
 }
@@ -1139,7 +1140,7 @@ section {
 }
   
 .featured-services .description {
-  font-size: 15px; 
+  font-size: 17px; 
   line-height: 28px;
   margin-bottom: 0;
 }
@@ -2056,7 +2057,7 @@ padding: 60px 0 0px 0;
   color: #0057fe;
 }
 #footer .footer-top .footer-contact p {
-  font-size: 14px;
+  font-size: 17px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Roboto", sans-serif;
@@ -2095,7 +2096,7 @@ padding: 60px 0 0px 0;
   color: #777777;
   transition: 0.3s;
   display: inline-block;
-  line-height: 1;
+  line-height: 1;font-size: 17px;
 }
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
