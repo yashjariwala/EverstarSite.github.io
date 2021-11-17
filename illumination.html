@@ -995,7 +995,7 @@
           </div>
 
           <input type="radio" name="tabs" id="tabtwo">
-          <label for="tabtwo">3030 1W</label>
+          <label for="tabtwo" id="tabtwobutton">3030 1W</label>
           <div class="tab">
             <div class="row">
               <div class="col-md-4">
@@ -1330,6 +1330,7 @@ This part has a foot print that is compatible to most of the same size LED in th
     window.onload = function () {
       if (window.location.href.indexOf("mid") > -1) {
         document.getElementById("MidPowerbutton").click();
+        document.getElementById("tabtwobutton").click();
       };
       if (window.location.href.indexOf("high") > -1) {
         document.getElementById("HighPowerButton").click();
