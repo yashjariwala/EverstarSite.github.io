@@ -607,6 +607,11 @@ background: #ddf0ff;
   background-color: #247cf0;
 }
 
+.tablinks:hover {
+  background-color: #247cf0;
+}
+
+
 
  
 
