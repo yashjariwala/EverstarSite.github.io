@@ -321,19 +321,20 @@
               <div class="row">
 
                 <div class="col form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Name of Company" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Company Name" required>
                 </div>
 				    <div class="col form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Name of Person" required>
                 </div>
 
 				  <div class="col form-group">
-                  <input type="number" class="form-control" name="number" id="email" placeholder="Phone Number" required>
+                  <input type="tel" class="form-control" name="phone_number" id="phone_number" vvpattern="^\d{3}-\d{3}-\d{4}$" placeholder="Phone Number" required="required" >
                 </div>
 				  
-                <div class="col form-group">
+                <div class="form-group">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
                 </div>
+				  
               </div>
               <div class="form-group">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
