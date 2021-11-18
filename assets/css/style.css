@@ -522,7 +522,7 @@ border: none;
  * Tabs
  */
 .tabs {
-	display: flex;
+
 	flex-wrap: wrap; // make sure it wraps
 }
 .tabs label {
