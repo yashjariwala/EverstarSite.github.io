@@ -25,10 +25,14 @@ p{ font-size: 17px;}
 
 .download a{color: #0d6efd!important;  }
 
+.features{padding: 15px 0px 15px 0;
+  line-height: 10px;
+  margin: 0;
+  border-bottom: 1px solid #dee2e6;color: #256ae5; }
 
 
 @media (min-width: 768px){
-.col-md-4 {
+#productimage{
     flex: 0 0 auto;
     width: 33.33333333%;
     margin: auto;
