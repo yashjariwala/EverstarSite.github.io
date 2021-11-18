@@ -48,7 +48,7 @@
   }
 </style>
 
-<body>
+<body onhashchange="myFunction()">
 
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center">
@@ -836,6 +836,10 @@ sacrificing efficacy.
     document.getElementById("outdoorbuttoncob").click();
 };
 };
+
+function myFunction() {
+      location.reload();
+    }
 
 
   </script>
