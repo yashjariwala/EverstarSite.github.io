@@ -276,13 +276,12 @@
 
     <section class="featured-services ">
 
-       <button class="tablink" onclick="openPage('LowPower', this, '#003085')" id="defaultOpen">LOW POWER LED</button>
-		<button class="tablink" onclick="openPage('indoor', this, '#003085')" id="defaultOpen">CHIP ON BOARD</button>
+      <button class="tablink" onclick="openPage('LowPower', this, '#003085')" id="defaultOpen">LOW POWER LED</button>
+      <button class="tablink" onclick="openPage('indoor', this, '#003085')" id="defaultOpen">CHIP ON BOARD</button>
       <button class="tablink" onclick="openPage('colourtunable', this, '#003085')">CCT TUNABLE COB</button>
 
 
       <div id="indoor" class="tabcontent " style="    border: 1px solid #818181;">
-
 
         <div class="row">
           <div class="col-md-4" id="productimage">
@@ -337,7 +336,7 @@
                 <th>IF</th>
                 <th>Flux</th>
                 <th>LES</th>
-                <th>CCT/Wavelength(nm)</th>
+                <th>CCT</th>
                 <th>CRI</th>
                 <th>Certificate</th>
                 <th>Datasheet</th>
@@ -354,7 +353,7 @@
                 <td>11.2</td>
                 <td>2700-6000K</td>
                 <td>80</td>
-                <td>-</td>
+                <td class="download"><a href="lm80/Everstar COBLM-80.pdf" target="_blank">LM80</a></td>
                 <td class="download"><a href="pdf/ES-XX-XQ003-0350-XXXXX.pdf" target="_blank"><i
                       class="bx bi-download"></i> Download</a></td>
               </tr>
@@ -368,7 +367,7 @@
                 <td>7</td>
                 <td>2700-6000K</td>
                 <td>80</td>
-                <td>-</td>
+                <td class="download"><a href="lm80/Everstar COBLM-80.pdf" target="_blank">LM80</a></td>
                 <td class="download"><a href="pdf/ES-XX-XQ003-0350-XXXXX.pdf" target="_blank"><i
                       class="bx bi-download"></i> Download</a></td>
               </tr>
@@ -396,7 +395,7 @@
                 <td>11.2</td>
                 <td>2700-6000K</td>
                 <td>80</td>
-                <td>-</td>
+                <td class="download"><a href="lm80/Everstar COBLM-80.pdf" target="_blank">LM80</a></td>
                 <td class="download"><a href="pdf/ES-11-XQ007-0200-XXXXX.pdf" target="_blank"><i
                       class="bx bi-download"></i> Download</a></td>
               </tr>
@@ -440,7 +439,7 @@
                 <td>11.2</td>
                 <td>2700-6000K</td>
                 <td>80</td>
-                <td>-</td>
+                <td class="download"><a href="lm80/Everstar COBLM-80.pdf" target="_blank">LM80</a></td>
                 <td class="download"><a href="pdf/ES-11-XQ009-0250-XXXXX.pdf" target="_blank"><i
                       class="bx bi-download"></i> Download</a></td>
               </tr>
@@ -454,7 +453,7 @@
                 <td>11.2</td>
                 <td>2700-6000K</td>
                 <td>80</td>
-                <td>-</td>
+                <td class="download"><a href="lm80/Everstar COBLM-80.pdf" target="_blank">LM80</a></td>
                 <td class="download"><a href="pdf/ES-11-XQ013-0350-XXXXX.pdf" target="_blank"><i
                       class="bx bi-download"></i> Download</a></td>
               </tr>
@@ -468,7 +467,7 @@
                 <td>17</td>
                 <td>2700-6000K</td>
                 <td>80</td>
-                <td>-</td>
+                <td class="download"><a href="lm80/Everstar COBLM-80.pdf" target="_blank">LM80</a></td>
                 <td class="download"><a href="pdf/ES-17-XQ018-0500-XXXXX.pdf" target="_blank"><i
                       class="bx bi-download"></i> Download</a></td>
               </tr>
@@ -496,7 +495,7 @@
                 <td>24</td>
                 <td>2700-6000K</td>
                 <td>80</td>
-                <td>-</td>
+                <td class="download"><a href="lm80/Everstar COBLM-80.pdf" target="_blank">LM80</a></td>
                 <td class="download"><a href="pdf/ES-24-XQ038-1050-XXXXX.pdf" target="_blank"><i
                       class="bx bi-download"></i> Download</a></td>
               </tr>
@@ -514,7 +513,7 @@
 
       <div id="colourtunable" class="tabcontent" style="    border: 1px solid #818181;">
         <div class="row">
-          <div class="col-md-4" id="productimage">
+          <div class="col-md-4 " id="productimage">
             <img src="assets/img/ccthighres.png" alt="" width="100%">
           </div>
           <div class="col-md-8">
@@ -530,19 +529,29 @@
 
             <div class="col-md-6 xx">
               <h5>Features</h5>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Two-channel CCT changing<br>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Consistent white light<br>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> High lumen density for directional lighting<br>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Accurate color mixing<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i>
+              Two-channel CCT changing<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i>
+              Consistent white light<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> High
+              lumen density for directional lighting<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Accurate
+              color mixing<br>
             </div>
             <div class="col-md-6 xx">
               <h5>Application</h5>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Human-centric lighting<br>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Hospitality lighting<br>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Museum lighting<br>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Multi-function space lighting<br>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Architectural lighting<br>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Track lighting<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i>
+              Human-centric lighting<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i>
+              Hospitality lighting<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Museum
+              lighting<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i>
+              Multi-function space lighting<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i>
+              Architectural lighting<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Track
+              lighting<br>
             </div>
 
           </div>
@@ -560,7 +569,7 @@
                 <th>IF</th>
                 <th>Flux</th>
                 <th>LES</th>
-                <th>CCT/Wavelength(nm)</th>
+                <th>CCT</th>
                 <th>CRI</th>
                 <th>Certificate</th>
                 <th>Datasheet</th>
@@ -638,7 +647,6 @@
 
       <div id="LowPower" class="tabcontent " style="    border: 1px solid #818181;">
 
-
         <div class="row">
           <div class="col-md-4" id="productimage">
             <img src="assets/img/2835highres.png" alt="" width="100%">
@@ -653,19 +661,29 @@
 
             <div class="col-md-6 xx">
               <h5>Features</h5>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> High efficacy<br>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Low thermal resistance<br>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Compatible with automatic pick and place equipment<br>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Compatible with the reflow soldering process<br>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Market standard 2835 size<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> High
+              efficacy<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Low
+              thermal resistance<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i>
+              Compatible with automatic pick and place equipment<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i>
+              Compatible with the reflow soldering process<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Market
+              standard 2835 size<br>
             </div>
             <div class="col-md-6 xx">
               <h5>Application</h5>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> LED batten<br>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Panel lighting<br>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Downlights<br>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Architectural/ Decorative lighting<br>
-               <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Indoor and Outdoor display<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> LED
+              batten<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Panel
+              lighting<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i>
+              Downlights<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i>
+              Architectural/ Decorative lighting<br>
+              <i class="bx bi-circle-fill" style="font-size: 8px; color: #003085;vertical-align: middle;"></i> Indoor
+              and Outdoor display<br>
             </div>
 
 
@@ -702,7 +720,7 @@
                 <td>2700-7500K</td>
                 <td>80</td>
                 <td class="download"><a href="lm80/ES-2835-023V LM-80.pdf" target="_blank">LM80</a></td>
-                <td class="download"> <a href="pdf/ES-2835-023V-XX-XXX.pdf" target="_blank"><i
+                <td class="download"><a href="pdf/ES-2835-023V-XX-XXX.pdf" target="_blank"><i
                       class="bx bi-download"></i> Download</a></td>
               </tr>
               <tr>
