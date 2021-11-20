@@ -19,6 +19,10 @@ p{ font-size: 17px;}
   padding: 6.5%;
 }
 
+.cobheading{text-align: center; color: #0057fe; font-weight: bold;}
+
+
+
 .xx{float: left;}
  
 .download:hover{color: #0d6efd; font-weight: bold; }
@@ -530,15 +534,18 @@ border: none;
  
  input + label {
    border: 1px solid #999;
-   background: #EEE;
-   padding: 4px 12px;
+   background: #e9f1ff;
+   padding: 10px 20px;
    border-radius: 4px 4px 0 0;
    position: relative;
    top: 1px;
  }
  input:checked + label {
-   background: #FFF;
-   border-bottom: 1px solid transparent;
+background: #eee;
+    padding: 10px 20px 10px 20px;
+    margin-top: 23px;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
  }
  input ~ .tab {
    border-top: 1px solid #999;
@@ -1032,7 +1039,7 @@ section {
 }
 @media (min-width: 1024px) {
   .section-title p {
-    width: 50%;
+    width: 68%;
 	 
   }
 	.main-box {
