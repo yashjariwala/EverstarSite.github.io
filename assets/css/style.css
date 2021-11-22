@@ -1207,7 +1207,7 @@ section {
 .about .content ul li {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
  
 .about .content ul i {
