@@ -214,6 +214,9 @@ p{ font-size: 17px;}
   top: auto;
  
 }
+a.nav-link{
+  width: max-content;
+}
 
 .navbar-toggler {
   border: none;
